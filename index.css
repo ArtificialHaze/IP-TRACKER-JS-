@@ -1,0 +1,92 @@
+/* GLOBAL STYLING */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace, sans-serif;
+  background-color: rgb(115, 185, 115);
+  overflow: hidden;
+}
+
+/* MAIN STYLING */
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 3rem;
+}
+
+.details-container {
+  text-align: center;
+}
+
+.ip,
+.geoLocation,
+.loc {
+  margin: 0.75rem;
+  font-size: 2rem;
+}
+
+.track-btn {
+  border: none;
+  background: rgb(73, 144, 180);
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.track-btn:hover {
+  background-color: rgba(100, 152, 179, 0.75);
+}
+
+.loader-container {
+  display: none;
+}
+
+.loader {
+  width: 15px;
+  height: 35px;
+  background: #fff;
+  margin: 3px;
+}
+
+.loaderOne {
+  animation: loader 1s ease-in-out infinite alternate;
+}
+
+.loaderTwo {
+  animation: loader 1s ease-in-out infinite alternate 0.5s;
+}
+
+.loaderThree {
+  animation: loader 1s ease-in-out infinite alternate 0.75s;
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
